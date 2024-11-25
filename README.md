@@ -1,4 +1,5 @@
 # My Project
+![Dynamictheme](images/Dynamictheme.png)
 
 This is a project that I created that suits and works well with the [PixelPunk Dynamic theme](https://addons.mozilla.org/en-US/firefox/addon/pixel-punk-dynamic-theme/)
 that works well with my css.
