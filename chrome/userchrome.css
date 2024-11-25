@@ -1,0 +1,142 @@
+/* Move the Tab Bar to the Left and make it vertical */
+#TabsToolbar {
+    display: flex !important;
+    flex-direction: column !important;   /* Stack the tabs vertically */
+    width: 60px !important;              /* Narrow width for smaller tabs */
+    height: 100vh !important;            /* Full viewport height */
+    position: fixed !important;          /* Fix the tab bar to the left side */
+    top: 0 !important;                   /* Align with the top of the screen */
+    left: 0 !important;                  /* Place it at the left side */
+    background-color: transparent !important; /* Transparent background for the tab bar */
+    z-index: 2 !important;               /* Ensure the tab bar appears above other elements */
+}
+
+/* Style the individual tabs with a simple appearance */
+.tabbrowser-tab {
+    width: 100% !important;              /* Full width of the tab bar */
+    height: 40px !important;             /* Small height for compact tabs */
+    background-color: transparent !important; /* Fully transparent background */
+    color: black !important;             /* Black text for tab titles */
+    border: none !important;             /* Remove border from tabs */
+    display: flex !important;
+    justify-content: center !important; /* Center the icon */
+    align-items: center !important;     /* Center the icon vertically */
+    font-size: 14px !important;         /* Text size for readability */
+    padding: 0 !important;               /* Remove padding */
+    position: relative !important;      /* For positioning pseudo-elements */
+}
+
+/* Add a black separator between tabs */
+.tabbrowser-tab:not(:last-child) {
+    border-bottom: 2px solid black !important; /* Black border between tabs */
+}
+
+/* Active tab (selected) - pink background and pink border */
+.tabbrowser-tab[selected] {
+    background-color: #ff007f !important; /* Pink background */
+    color: white !important;              /* White text for contrast */
+    border: 2px solid #ff007f !important;    /* Pink border for active tab */
+    border-radius: 5px !important;          /* Slight rounding of corners */
+}
+
+/* Icon color for loaded tabs (grey) */
+.tabbrowser-tab[selected] .tab-icon {
+    filter: grayscale(100%) !important; /* Make the icon grey for active tab */
+}
+
+/* Hover effect for unloaded (background) tabs */
+.tabbrowser-tab:not([selected]):hover {
+    background-color: transparent !important; /* No background on hover */
+    border: 2px solid #800080 !important; /* Purple border for unloaded tabs on hover */
+    color: black !important;                  /* Keep text visible */
+}
+
+/* Icon color for unloaded (background) tabs (black) */
+.tabbrowser-tab:not([selected]) .tab-icon {
+    filter: grayscale(0%) !important; /* Keep the icon black for unloaded tab */
+}
+
+/* Unloaded tabs (background tabs not yet loaded) */
+.tabbrowser-tab[pending] {
+    background-color: transparent !important; /* Transparent background for pending tabs */
+    color: grey !important;                   /* Grey text for unloaded tabs */
+}
+
+/* Move the Tab Bar to the Left and make it vertical */
+#TabsToolbar {
+    display: flex !important;
+    flex-direction: column !important;   /* Stack the tabs vertically */
+    width: 60px !important;              /* Narrow width for smaller tabs */
+    height: 100vh !important;            /* Full viewport height */
+    position: fixed !important;          /* Fix the tab bar to the left side */
+    top: 0 !important;                   /* Align with the top of the screen */
+    left: 0 !important;                  /* Place it at the left side */
+    background-color: transparent !important; /* Transparent background for the tab bar */
+    z-index: 2 !important;               /* Ensure the tab bar appears above other elements */
+}
+
+/* Style the individual tabs with a simple appearance */
+.tabbrowser-tab {
+    width: 100% !important;              /* Full width of the tab bar */
+    height: 40px !important;             /* Small height for compact tabs */
+    background-color: transparent !important; /* Fully transparent background */
+    color: black !important;             /* Black text for tab titles */
+    border: none !important;             /* Remove border from tabs */
+    display: flex !important;
+    justify-content: center !important; /* Center the icon */
+    align-items: center !important;     /* Center the icon vertically */
+    font-size: 14px !important;         /* Text size for readability */
+    padding: 0 !important;               /* Remove padding */
+    position: relative !important;      /* For positioning pseudo-elements */
+}
+
+/* Add a black separator between tabs */
+.tabbrowser-tab:not(:last-child) {
+    border-bottom: 2px solid black !important; /* Black border between tabs */
+}
+
+/* Active tab (selected) - pink background and pink border */
+.tabbrowser-tab[selected] {
+    background-color: #ff007f !important; /* Pink background */
+    color: white !important;              /* White text for contrast */
+    border: 2px solid #ff007f !important;    /* Pink border for active tab */
+    border-radius: 5px !important;          /* Slight rounding of corners */
+}
+
+/* Icon color for loaded tabs (grey) */
+.tabbrowser-tab[selected] .tab-icon {
+    filter: grayscale(100%) !important; /* Make the icon grey for active tab */
+}
+
+/* Hover effect for unloaded (background) tabs */
+.tabbrowser-tab:not([selected]):hover {
+    background-color: transparent !important; /* No background on hover */
+    border: 2px solid #800080 !important; /* Purple border for unloaded tabs on hover */
+    color: black !important;                  /* Keep text visible */
+}
+
+/* Icon color for unloaded (background) tabs (black) */
+.tabbrowser-tab:not([selected]) .tab-icon {
+    filter: grayscale(0%) !important; /* Keep the icon black for unloaded tab */
+}
+
+/* Unloaded tabs (background tabs not yet loaded) */
+.tabbrowser-tab[pending] {
+    background-color: transparent !important; /* Transparent background for pending tabs */
+    color: grey !important;                   /* Grey text for unloaded tabs */
+}
+
+
+#urlbar-background, #urlbar {
+    border-radius: 20px !important;  /* Keep rounded corners */
+}
+
+/* Center the text inside the URL bar */
+#urlbar .urlbar-input-box {
+    text-align: center !important;  /* Center the search text */
+    width: 100% !important;         /* Make the input field take up full width */
+    padding-left: 0 !important;     /* Remove any default padding that might affect centering */
+    padding-right: 0 !important;    /* Remove any default padding that might affect centering */
+}
+
+
