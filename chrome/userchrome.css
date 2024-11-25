@@ -75,20 +75,6 @@
     z-index: 2 !important;               /* Ensure the tab bar appears above other elements */
 }
 
-/* Style the individual tabs with a simple appearance */
-.tabbrowser-tab {
-    width: 100% !important;              /* Full width of the tab bar */
-    height: 40px !important;             /* Small height for compact tabs */
-    background-color: transparent !important; /* Fully transparent background */
-    color: black !important;             /* Black text for tab titles */
-    border: none !important;             /* Remove border from tabs */
-    display: flex !important;
-    justify-content: center !important; /* Center the icon */
-    align-items: center !important;     /* Center the icon vertically */
-    font-size: 14px !important;         /* Text size for readability */
-    padding: 0 !important;               /* Remove padding */
-    position: relative !important;      /* For positioning pseudo-elements */
-}
 
 /* Add a black separator between tabs */
 .tabbrowser-tab:not(:last-child) {
